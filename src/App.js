@@ -5,10 +5,10 @@ import './scss/_main.scss';
 function App() {
   return (
     <>
-      {/* <Cointainer> */}
+      {/* <Container> */}
       {/* <WeatherDisplay /> */}
       <ToastContainer autoClose={3700} position="bottom-center" />
-      {/* </Cointainer> */}
+      {/* </Container> */}
     </>
   );
 }
