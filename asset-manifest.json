@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/weather-forecast-by-city/static/css/main.073c9b0a.css",
-    "main.js": "/weather-forecast-by-city/static/js/main.eb1155a7.js",
-    "static/js/787.ffd67ba7.chunk.js": "/weather-forecast-by-city/static/js/787.ffd67ba7.chunk.js",
-    "static/media/logo.svg": "/weather-forecast-by-city/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/weather-forecast-by-city/static/css/main.ebc65f66.css",
+    "main.js": "/weather-forecast-by-city/static/js/main.f2f58a1e.js",
+    "static/media/wind.png": "/weather-forecast-by-city/static/media/wind.c018b2ef34108cce8c4c.png",
+    "static/media/temperature.png": "/weather-forecast-by-city/static/media/temperature.7e8ff98c067cbfe044aa.png",
+    "static/media/404.png": "/weather-forecast-by-city/static/media/404.3bfe37ac9fa282fa8678.png",
     "index.html": "/weather-forecast-by-city/index.html",
-    "main.073c9b0a.css.map": "/weather-forecast-by-city/static/css/main.073c9b0a.css.map",
-    "main.eb1155a7.js.map": "/weather-forecast-by-city/static/js/main.eb1155a7.js.map",
-    "787.ffd67ba7.chunk.js.map": "/weather-forecast-by-city/static/js/787.ffd67ba7.chunk.js.map"
+    "main.ebc65f66.css.map": "/weather-forecast-by-city/static/css/main.ebc65f66.css.map",
+    "main.f2f58a1e.js.map": "/weather-forecast-by-city/static/js/main.f2f58a1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.eb1155a7.js"
+    "static/css/main.ebc65f66.css",
+    "static/js/main.f2f58a1e.js"
   ]
 }
