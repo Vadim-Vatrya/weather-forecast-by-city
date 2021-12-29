@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import { Month, Weekday, Day } from '../../helpers/utils';
+import { Month, Weekday, Day } from '../../helpers/date';
 import clock from '../../images/clock.png';
-import styles from './DateTime.module.css';
+import styles from './DateTime.module.scss';
 
 function Clock() {
   const [time, setTime] = useState(() => new Date().toLocaleTimeString());

@@ -4,7 +4,7 @@ import temperature from '../../images/temperature.png';
 import wind from '../../images/wind.png';
 import himidity from '../../images/humidity.png';
 
-import styles from 'DataView.module.scss';
+import styles from './DataView.module.scss';
 
 const DataView = ({
   weatherData: {
