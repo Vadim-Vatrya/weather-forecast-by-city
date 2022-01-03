@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 import styles from './SearchBar.module.scss';
 
-const SearchBar = ({ onHadleSubmit }) => {
+const SearchBar = ({ onHandleSubmit }) => {
   const [query, setQuery] = useState('');
 
   const onSubmit = event => {
@@ -14,7 +14,7 @@ const SearchBar = ({ onHadleSubmit }) => {
       return toast.info('😱 Please enter a value for search city!');
     }
 
-    onHadleSubmit(query);
+    onHandleSubmit(query);
     setQuery('');
   };
 

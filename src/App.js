@@ -5,10 +5,11 @@ import Container from './components/Container';
 import WeatherBoard from './components/WeatherBoard';
 import SearchBar from './components/SearchBar';
 
-// import './scss/_main.scss';
+import './scss/_main.scss';
 
 function App() {
   const [query, setQuery] = useState('');
+
   const handleSubmite = newSearch => {
     setQuery(newSearch);
   };
