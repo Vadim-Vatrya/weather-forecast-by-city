@@ -20,7 +20,7 @@ const SearchBar = ({ onHandleSubmit }) => {
 
   return (
     <>
-      <header className={styles.input}>
+      <header className={styles.Header}>
         <form className={styles.form} onSubmit={onSubmit}>
           <input
             className={styles.input}

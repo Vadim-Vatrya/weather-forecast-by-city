@@ -1,0 +1,76 @@
+@import '../../scss/breakpoints';
+
+// Fixes a Header on a mobile device
+.Header {
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #87ceeb;
+  box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+// ======================Mobile===================
+@media screen and (max-width: $mobile-max) {
+  .Header {
+    padding: 10px 20px;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    //   min-height: 60px;
+  }
+
+  .input {
+  }
+
+  .label {
+  }
+
+  .button {
+    // min-height: 60px;
+  }
+}
+
+// =========================== Tablet ===========================
+
+@media screen and (min-width: $tablet) {
+  .Header {
+    padding: 10px 20px;
+  }
+
+  .form {
+  }
+
+  .input {
+  }
+
+  .label {
+  }
+
+  .button {
+  }
+}
+
+// ========================== Desktop ===================
+
+@media screen and (min-width: $desktop) {
+  .Header {
+    padding: 10px 20px;
+  }
+
+  .form {
+  }
+
+  .input {
+  }
+
+  .label {
+  }
+
+  .button {
+  }
+}
