@@ -2,75 +2,150 @@
 
 // Fixes a Header on a mobile device
 .Header {
-  display: flex;
+  // display: flex;
+  // position: sticky;
+  // justify-content: center;
+  // align-items: center;
+  // color: #fff;
+  // background-color: #87ceeb;
+  // box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
   position: sticky;
+  z-index: 1100;
+  display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #fff;
   background-color: #87ceeb;
-  box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-// ======================Mobile===================
-@media screen and (max-width: $mobile-max) {
-  .Header {
-    padding: 10px 20px;
-  }
-
-  .form {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    //   min-height: 60px;
-  }
-
-  .input {
-  }
-
-  .label {
-  }
-
-  .button {
-    // min-height: 60px;
-  }
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  //   border-radius: 3px;
+  //   overflow: hidden;
 }
 
-// =========================== Tablet ===========================
-
-@media screen and (min-width: $tablet) {
-  .Header {
-    padding: 10px 20px;
-  }
-
-  .form {
-  }
-
-  .input {
-  }
-
-  .label {
-  }
-
-  .button {
-  }
+.btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  // transition: opacity 250ms var(--timingFn);
+  cursor: pointer;
+  outline: none;
 }
 
-// ========================== Desktop ===================
-
-@media screen and (min-width: $desktop) {
-  .Header {
-    padding: 10px 20px;
-  }
-
-  .form {
-  }
-
-  .input {
-  }
-
-  .label {
-  }
-
-  .button {
-  }
+.btn:hover {
+  opacity: 1;
 }
+
+.label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.input::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
+
+// // ======================Mobile===================
+// @media screen and (max-width: $mobile-max) {
+//   .Header {
+//     padding: 10px 20px;
+//   }
+
+//   .form {
+//     display: flex;
+//     align-items: center;
+//     min-height: 60px;
+
+//     //   min-height: 60px;
+//   }
+
+//   .input {
+//   }
+
+//   .label {
+//   }
+
+//   .button {
+//     // min-height: 60px;
+//   }
+// }
+
+// // =========================== Tablet ===========================
+
+// @media screen and (min-width: $tablet) {
+//   .Header {
+//     padding: 15px 30px;
+//   }
+
+//   .form {
+//   }
+
+//   .input {
+//   }
+
+//   .label {
+//   }
+
+//   .button {
+//   }
+// }
+
+// // ========================== Desktop ===================
+
+// @media screen and (min-width: $desktop) {
+//   .Header {
+//     padding: 20px 40px;
+//   }
+
+//   .form {
+//     max-width: 600px;
+//   }
+
+//   .input {
+//   }
+
+//   .label {
+//   }
+
+//   .button {
+//   }
+// }
