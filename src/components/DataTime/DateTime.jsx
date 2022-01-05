@@ -24,21 +24,23 @@ function Clock() {
   };
 
   return (
-    <div className={styles.container}>
-      <img
-        className={styles.icon}
-        src={clock}
-        alt="time icon"
-        width="38"
-        height="38"
-      />
-      <div className={styles.wrapper}>
-        <p className={styles.time}>{time}</p>
-        <p className={styles.date}>
-          {Weekday}, {Month} {Day}
-        </p>
+    <>
+      <div className={styles.section}>
+        <img
+          className={styles.icon}
+          src={clock}
+          alt="time icon"
+          // width="38"
+          // height="38"
+        />
+        <div className={styles.wrapper}>
+          <p className={styles.time}>{time}</p>
+          <p className={styles.date}>
+            {Weekday}, {Month} {Day}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
