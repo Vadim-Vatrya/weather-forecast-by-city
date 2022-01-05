@@ -2,51 +2,36 @@
 
 // Fixes a Header on a mobile device
 .Header {
-  // display: flex;
-  // position: sticky;
-  // justify-content: center;
-  // align-items: center;
-  // color: #fff;
-  // background-color: #87ceeb;
-  // box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
   position: sticky;
   z-index: 1100;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 64px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
   color: #fff;
-  background-color: #87ceeb;
+  background-color: #22b3ec;
+  border-radius: 5px;
 }
 
 .form {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 600px;
   background-color: #fff;
-  border-radius: 3px;
   overflow: hidden;
-  //   border-radius: 3px;
-  //   overflow: hidden;
+  border-radius: 5px;
 }
 
 .btn {
   display: inline-block;
-  width: 48px;
-  height: 48px;
   border: 0;
+  border-radius: 5px;
+  margin-left: 10px;
   background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
-  background-size: 40%;
+  // background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.4;
   // transition: opacity 250ms var(--timingFn);
   cursor: pointer;
   outline: none;
@@ -70,13 +55,11 @@
 
 .input {
   display: inline-block;
+  font-size: 20px;
   width: 100%;
   font: inherit;
-  font-size: 20px;
   border: none;
   outline: none;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .input::placeholder {
@@ -84,68 +67,82 @@
   font-size: 18px;
 }
 
-// // ======================Mobile===================
-// @media screen and (max-width: $mobile-max) {
-//   .Header {
-//     padding: 10px 20px;
-//   }
+// ======================Mobile===================
+@media screen and (max-width: $mobile-max) {
+  .Header {
+    padding: 15px 30px;
+    min-height: 100px;
+  }
 
-//   .form {
-//     display: flex;
-//     align-items: center;
-//     min-height: 60px;
+  .form {
+    max-width: 600px;
+    min-height: 40px;
+  }
 
-//     //   min-height: 60px;
-//   }
+  .input {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-//   .input {
-//   }
+  // .label {
+  // }
 
-//   .label {
-//   }
+  .btn {
+    width: 80px;
+    height: 40px;
+    // min-height: 60px;
+  }
+}
 
-//   .button {
-//     // min-height: 60px;
-//   }
-// }
+// =========================== Tablet ===========================
 
-// // =========================== Tablet ===========================
+@media screen and (min-width: $tablet) {
+  .Header {
+    padding: 20px 40px;
+    min-height: 100px;
+  }
 
-// @media screen and (min-width: $tablet) {
-//   .Header {
-//     padding: 15px 30px;
-//   }
+  .form {
+    max-width: 750px;
+    min-height: 50px;
+  }
 
-//   .form {
-//   }
+  .input {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-//   .input {
-//   }
+  // .label {
+  // }
 
-//   .label {
-//   }
+  .btn {
+    width: 100px;
+    height: 50px;
+  }
+}
 
-//   .button {
-//   }
-// }
+// ========================== Desktop ===================
 
-// // ========================== Desktop ===================
+@media screen and (min-width: $desktop) {
+  .Header {
+    padding: 30px 60px;
+  }
 
-// @media screen and (min-width: $desktop) {
-//   .Header {
-//     padding: 20px 40px;
-//   }
+  .form {
+    max-width: 850px;
+    min-height: 60px;
+  }
 
-//   .form {
-//     max-width: 600px;
-//   }
+  .input {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-//   .input {
-//   }
+  // .label {
+  // }
 
-//   .label {
-//   }
-
-//   .button {
-//   }
-// }
+  .btn {
+    width: 120px;
+    height: 60px;
+  }
+}
