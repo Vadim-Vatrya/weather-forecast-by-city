@@ -3,7 +3,7 @@
 .section {
   display: flex;
   align-items: center;
-  background-color: rgb(245, 227, 227);
+  // background-color: rgb(245, 227, 227);
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -29,7 +29,7 @@
 // ======================Mobile===================
 @media screen and (max-width: $mobile-max) {
   .section {
-    justify-content: center;
+    justify-content: start;
   }
 
   .icon {
@@ -38,7 +38,7 @@
   }
 
   .wrapper {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -46,7 +46,7 @@
 
 @media screen and (min-width: $tablet) {
   .section {
-    justify-content: center;
+    justify-content: start;
   }
 
   .icon {
@@ -55,7 +55,7 @@
   }
 
   .wrapper {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
@@ -63,7 +63,7 @@
 
 @media screen and (min-width: $desktop) {
   .section {
-    justify-content: center;
+    justify-content: start;
   }
 
   .icon {
@@ -72,6 +72,6 @@
   }
 
   .wrapper {
-    font-size: 26px;
+    font-size: 32px;
   }
 }

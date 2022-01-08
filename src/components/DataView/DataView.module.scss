@@ -1,13 +1,15 @@
-.container {
+@import '../../scss/breakpoints';
+
+.box {
   padding: 60px;
-  background-color: rgba(173, 216, 230, 0.6);
+  background-color: rgba(173, 216, 230, 0.4);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .title {
   margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600;
+  // font-size: 32px;
 }
 
 .icon {
@@ -20,13 +22,62 @@
 }
 
 .wrapper:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .description {
   font-family: 'Lora', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+
   color: #566573;
   text-align: left;
+}
+
+// ======================Mobile===================
+@media screen and (max-width: $mobile-max) {
+  .title {
+    font-size: 32px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}
+
+// =========================== Tablet ===========================
+
+@media screen and (min-width: $tablet) {
+  .title {
+    font-size: 40px;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .description {
+    font-size: 26px;
+  }
+}
+
+// ========================== Desktop ===================
+
+@media screen and (min-width: $desktop) {
+  .title {
+    font-size: 48px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .description {
+    font-size: 32px;
+  }
 }
