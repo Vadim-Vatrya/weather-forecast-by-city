@@ -1,13 +1,38 @@
+@import '../../scss/breakpoints';
+
 .wrapper {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
+  background-color: rgba(173, 216, 230, 0.4);
 }
 
 .text {
   margin-top: 30px;
   color: red;
   font-weight: 600;
-  font-size: 30px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+// ======================Mobile===================
+@media screen and (max-width: $mobile-max) {
+  .text {
+    font-size: 26px;
+  }
+}
+
+// =========================== Tablet ===========================
+
+@media screen and (min-width: $tablet) {
+  .text {
+    font-size: 36px;
+  }
+}
+
+// ========================== Desktop ===================
+
+@media screen and (min-width: $desktop) {
+  .text {
+    font-size: 46px;
+  }
 }
