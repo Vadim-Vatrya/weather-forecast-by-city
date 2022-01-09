@@ -1,15 +1,15 @@
 @import '../../scss/breakpoints';
+@import '../../scss/vars';
 
 .box {
   padding: 60px;
-  background-color: rgba(173, 216, 230, 0.4);
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+  background-color: $main-background;
+  box-shadow: $box-shadow;
 }
 
 .title {
   margin-bottom: 20px;
   font-weight: 600;
-  // font-size: 32px;
 }
 
 .icon {
@@ -26,9 +26,9 @@
 }
 
 .description {
-  font-family: 'Lora', cursive;
+  font-family: $main-font;
   font-weight: 500;
-  color: #566573;
+  color: $text-grey;
   text-align: left;
 }
 

@@ -1,4 +1,5 @@
 @import '../../scss/breakpoints';
+@import '../../scss/vars';
 
 // Fixes a Header on a mobile device
 .Header {
@@ -7,8 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background-color: #22b3ec;
+  color: $form-background;
+  background-color: $form-background-color;
   border-radius: 5px;
 }
 
@@ -17,7 +18,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #fff;
+  background-color: $form-background;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -55,6 +56,7 @@
 
 .input {
   display: inline-block;
+  font-family: $main-font;
   font-size: 20px;
   width: 100%;
   font: inherit;

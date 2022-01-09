@@ -1,9 +1,9 @@
 @import '../../scss/breakpoints';
+@import '../../scss/vars';
 
 .section {
   display: flex;
   align-items: center;
-  // background-color: rgb(245, 227, 227);
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -13,19 +13,19 @@
 }
 
 .wrapper {
-  font-family: 'Lora', cursive;
+  font-family: $main-font;
   text-align: left;
 }
 
 .time {
-  font-family: 'Lora', sans-serif;
+  font-family: $main-font;
   font-weight: 700;
 }
 
 .date {
-  font-family: 'Lora', sans-serif;
+  font-family: $main-font;
   font-weight: 500;
-  color: #566573;
+  color: $text-grey;
 }
 
 // ======================Mobile===================

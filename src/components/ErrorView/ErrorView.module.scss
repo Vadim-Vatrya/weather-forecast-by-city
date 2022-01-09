@@ -1,17 +1,19 @@
 @import '../../scss/breakpoints';
+@import '../../scss/vars';
 
 .wrapper {
   margin: 0 auto;
   padding: 40px 0;
   text-align: center;
-  background-color: rgba(173, 216, 230, 0.4);
+  background-color: $main-background;
 }
 
 .text {
+  font-family: $main-font;
   margin-top: 30px;
-  color: red;
+  color: $text-red;
   font-weight: 600;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: $text-shadow;
 }
 
 // ======================Mobile===================
